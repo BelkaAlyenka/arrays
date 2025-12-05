@@ -1,9 +1,66 @@
+import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         //Задача 1
-        //Задача 2
-        //Задача 3
-        //Задача 4
+        int [] numbers = new int [3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
 
+        float [] fractionalNumbers = {1.57f, 7.654f, 9.986f};
+
+        int[] fruitsWeights = {2, 7, 6};
+
+        //Задача 2
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i]);
+            if (i < numbers.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < fractionalNumbers.length; i++) {
+            System.out.print(fractionalNumbers[i]);
+            if (i < fractionalNumbers.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = 0; i < fruitsWeights.length; i++) {
+            System.out.print(fruitsWeights[i]);
+            if (i < fruitsWeights.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        //Задача 3
+        System.out.println();
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = fractionalNumbers.length - 1; i >= 0; i--) {
+            System.out.print(fractionalNumbers[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = fruitsWeights.length - 1; i >= 0; i--) {
+            System.out.print(fruitsWeights[i]);
+            if (i > 0) {
+                System.out.print(", ");
+            }
+        }
+        //Задача 4
+        System.out.println();
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                numbers[i]++;
+            }
+        }
+        System.out.println(Arrays.toString(numbers));
     }
 }
